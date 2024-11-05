@@ -15,4 +15,7 @@ npm i antd
 <!-- đẩy code lên github -->
 1. git init
 2. git remote add origin https://github.com/tuannguyen-1309/xuong-fa24.git
-3. 
+3. git status (kiểm tra trạng thái)
+4. git add . (k đẩy file node_module)
+5. git commit -m "init"
+6. git push --set-upstream origin master (để mặc định push nhánh này)

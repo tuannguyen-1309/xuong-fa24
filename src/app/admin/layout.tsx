@@ -43,7 +43,7 @@ const items: MenuItem[] = [
   getItem("Files", "9", <FileOutlined />),
 ];
 
-const LayoutAdmin: React.FC = () => {
+const LayoutAdmin = ({children}:{children:React.ReactNode}) => {
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer, borderRadiusLG },
@@ -79,7 +79,7 @@ const LayoutAdmin: React.FC = () => {
               borderRadius: borderRadiusLG,
             }}
           >
-            Bill is a cat.
+           {children}
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
